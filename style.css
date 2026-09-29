@@ -1,0 +1,126 @@
+body {
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  margin: 0;
+  padding: 40px 20px;
+  color: #334155;
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  background-color: #ffffff;
+  padding: 35px 40px;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(30, 100, 200, 0.15);
+  border: 1px solid #dbeafe;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  color: #1e40af;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  color: #1e40af;
+  border-bottom: 2px solid #93c5fd;
+  padding-bottom: 8px;
+  margin-top: 30px;
+}
+
+.profile-header {
+  text-align: center;
+}
+
+h2.nama {
+  border-bottom: none !important;
+  text-align: center !important;
+  margin-bottom: 0;
+  margin-top: 15px;
+  padding-bottom: 0;
+  font-size: 28px;
+  color: #1e40af;
+}
+
+.nim {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #3b82f6;
+  text-align: center;
+  margin: 5px 0 0 0;
+  letter-spacing: 1px;
+}
+
+.garis-biru {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #bfdbfe, #3b82f6, #bfdbfe);
+  border-radius: 2px;
+  margin: 20px 0 25px 0;
+}
+
+.prodi {
+  text-align: center;
+  font-weight: bold;
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+.deskripsi {
+  text-align: center;
+  font-style: italic;
+}
+
+img {
+  border-radius: 50%;
+  border: 4px solid #60a5fa;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto 10px auto;
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+}
+
+p {
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  color: #475569;
+}
+
+b {
+  color: #1d4ed8;
+}
+
+.info {
+  background: #eff6ff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border-left: 4px solid #3b82f6;
+}
+
+.info p {
+  margin: 0;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #bfdbfe, #3b82f6, #bfdbfe);
+  border-radius: 2px;
+  margin: 25px 0;
+}
+
+.footer {
+  text-align: center;
+  color: #60a5fa;
+}
