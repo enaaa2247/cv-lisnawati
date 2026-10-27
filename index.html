@@ -4,65 +4,215 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV LISNAWATI</title>
+    <!-- Tambahan 1: Link CSS Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="center">
-      <h1>CV LISNAWATI</h1>
-      <hr />
-
-      <div class="profile-header">
-        <img src="./foto.jpg" alt="Foto Lisnawati" />
-        <h2 class="nama">Lisnawati</h2>
-        <p class="nim">(NIM : 2501016)</p>
+    <!-- Komponen Bootstrap 1: Navbar (Navigasi Atas) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Portofolio Lisnawati</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyek-bootstrap">Proyek Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq-bootstrap">FAQ</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <hr class="garis-biru" />
+    <!-- Bungkus konten asli Anda agar letaknya tetap rapi di tengah -->
+    <div
+      style="
+        margin-top: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      "
+    >
+      <div class="center">
+        <h1>CV LISNAWATI</h1>
+        <hr />
 
-      <p class="prodi">Mahasiswi Teknologi Rekayasa Perangkat Lunak</p>
-      <p class="deskripsi">
-        Mahasiswi yang memiliki ketertarikan dalam bidang teknologi,
-        pemrograman, dan pembuatan website sederhana
-      </p>
+        <div class="profile-header">
+          <img src="./foto.jpg" alt="Foto Lisnawati" />
+          <h2 class="nama">Lisnawati</h2>
+          <p class="nim">(NIM : 2501016)</p>
+        </div>
 
-      <h2>Biodata</h2>
-      <div class="info">
-        <p>
-          <b>Nama :</b> Lisnawati<br />
-          <b>Tempat Tanggal Lahir :</b> 22 April 2007<br />
-          <b>Status :</b> Mahasiswi<br />
-          <b>Alamat :</b> Lumbung, Ciamis, Jawa Barat
+        <hr class="garis-biru" />
+
+        <p class="prodi">Mahasiswi Teknologi Rekayasa Perangkat Lunak</p>
+        <p class="deskripsi">
+          Mahasiswi yang memiliki ketertarikan dalam bidang teknologi,
+          pemrograman, dan pembuatan website sederhana
         </p>
-      </div>
 
-      <h2>Pendidikan</h2>
-      <p>
-        <b>Kampus :</b> Politeknik Manahijul Huda<br />
-        <b>Program Studi :</b> Teknologi Rekayasa Perangkat Lunak<br />
-        Selama pendidikan, saya mempelajari dasar pemrograman dan pengembangan
-        website serta terus berusaha meningkatkan kemampuan di bidang teknologi.
-      </p>
+        <h2>Biodata</h2>
+        <div class="info">
+          <p>
+            <b>Nama :</b> Lisnawati<br />
+            <b>Tempat Tanggal Lahir :</b> 22 April 2007<br />
+            <b>Status :</b> Mahasiswi<br />
+            <b>Alamat :</b> Lumbung, Ciamis, Jawa Barat
+          </p>
+        </div>
 
-      <h2>Pengalaman</h2>
-      <p>
-        Membuat website sederhana tentang kewirausahaan/toko dalam lingkup
-        project akhir semester 2.<br />
-        Dalam project tersebut, saya belajar membuat tampilan website, menyusun
-        informasi, dan menerapkan dasar HTML serta CSS.
-      </p>
-
-      <h2>Kontak</h2>
-      <div class="info">
+        <h2>Pendidikan</h2>
         <p>
-          <b>No HP/WA :</b> 081224820071<br />
-          <b>Email :</b> nawatiii065@email.com<br />
-          <b>Instagram :</b> __nalsnaaa_<br />
-          <b>Tiktok :</b> naaww_.
+          <b>Kampus :</b> Politeknik Manahijul Huda<br />
+          <b>Program Studi :</b> Teknologi Rekayasa Perangkat Lunak<br />
+          Selama pendidikan, saya mempelajari dasar pemrograman dan pengembangan
+          website serta terus berusaha meningkatkan kemampuan di bidang
+          teknologi.
         </p>
-      </div>
 
-      <hr />
-      <p class="footer"><b>&copy; 2026 Lisnawati</b></p>
+        <h2>Pengalaman</h2>
+        <p>
+          Membuat website sederhana tentang kewirausahaan/toko dalam lingkup
+          project akhir semester 2.<br />
+          Dalam project tersebut, saya belajar membuat tampilan website,
+          menyusun informasi, dan menerapkan dasar HTML serta CSS.
+        </p>
+
+        <!-- Komponen Bootstrap 2: Cards (Daftar Proyek) -->
+        <div id="proyek-bootstrap" class="mt-4">
+          <h2 class="mb-3">Portofolio & Proyek (Bootstrap)</h2>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card h-100 border-primary shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Website Kewirausahaan</h5>
+                  <p
+                    class="card-text text-secondary"
+                    style="font-family: Arial, sans-serif; font-size: 14px"
+                  >
+                    Project toko online sederhana yang dibuat menggunakan HTML
+                    dan CSS murni.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 border-primary shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">
+                    Sistem Informasi Akademik
+                  </h5>
+                  <p
+                    class="card-text text-secondary"
+                    style="font-family: Arial, sans-serif; font-size: 14px"
+                  >
+                    Eksperimen desain antarmuka web kampus menggunakan komponen
+                    Bootstrap.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Komponen Bootstrap 3: Accordion (FAQ / Informasi Tambahan) -->
+        <div id="faq-bootstrap" class="mt-4">
+          <h2 class="mb-3">Informasi Tambahan (FAQ)</h2>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                >
+                  Apa keahlian utama yang sedang dipelajari?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div
+                  class="accordion-body"
+                  style="
+                    font-family: Arial, sans-serif;
+                    color: #475569;
+                    font-size: 14px;
+                  "
+                >
+                  Pengembangan web dasar (HTML, CSS), responsive design, dan
+                  pemanfaatan framework Bootstrap.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                >
+                  Bagaimana cara menghubungi saya?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div
+                  class="accordion-body"
+                  style="
+                    font-family: Arial, sans-serif;
+                    color: #475569;
+                    font-size: 14px;
+                  "
+                >
+                  Anda dapat melihat kontak lengkap pada bagian bawah CV ini
+                  melalui nomor WhatsApp atau Email yang tertera.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Kontak</h2>
+        <div class="info">
+          <p>
+            <b>No HP/WA :</b> 081224820071<br />
+            <b>Email :</b> nawatiii065@email.com<br />
+            <b>Instagram :</b> __nalsnaaa_<br />
+            <b>Tiktok :</b> naaww_.
+          </p>
+        </div>
+
+        <hr />
+        <p class="footer"><b>&copy; 2026 Lisnawati</b></p>
+      </div>
     </div>
+
+    <!-- Tambahan 2: Link JavaScript Bootstrap 5 (Bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
